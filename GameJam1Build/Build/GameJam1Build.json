@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "GameJam1",
+"dataUrl": "GameJam1Build.data.unityweb",
+"wasmCodeUrl": "GameJam1Build.wasm.code.unityweb",
+"wasmFrameworkUrl": "GameJam1Build.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#586F93",
+"cacheControl": {"default": "must-revalidate"}
+}
