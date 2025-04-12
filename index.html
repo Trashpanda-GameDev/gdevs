@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://trashpanda-gamedev.github.io/TestingPrototype/Portfolio.js"></script>
+	<script src="https://trashpanda-gamedev.github.io/TestingPrototype/Modal.js"></script>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<style>
+		#header {
+			background: url(https://i.vgy.me/k44F4j.png) center center;
+			color: aliceblue;
+		}
+		.lead {
+			color: aliceblue;
+		}
+		.bg-info {
+    /*background-color: #000!important;*/
+		}
+		.carousel-inner{
+			width:70%; 
+			height: 18rem!important;
+		}
+		.carousel-item{
+			height: 100%;
+		}
+		.carouselCenterClass{
+			height: 100%; 
+			width: auto;
+		}
+		.fasCarouselColor{
+			color: #17a2b8
+		}
+	</style>
+</head>
+	
+<body class='  wsite-theme-light'>
+	
+	<script> navBar(); </script>
+	
+	<section id="header" class="jumbotron text-center ">
+		<h1 class="display-3">Portfolio Yosri Jerbi</h1>
+		<p class="lead">Game developer</p>
+		<!--a href="" class="btn btn-primary">Do something</a>
+		<a href="" class="btn btn-success">Another thing</a-->
+	</section>
+	
+<!-- NAV TABS -->
+	<nav>
+		<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+			<a class="nav-item nav-link active" id="nav-projects-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Projects</a>
+			<!--a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">3D Modeling</a-->
+		</div>
+	</nav>
+	
+	<div class="tab-content" id="nav-tabContent">
+		
+<!-- PROJECTS CONTENT -->
+		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-projects-tab">
+			<section id="gallery">
+				<div class="container ">
+					<div class="row flex-row-reverse flex-wrap-reverse justify-content-around">
+						<script>
+							makeCard("https://i.vgy.me/Nxz2xC.png",
+											 "First Game",
+											 "Gamemaker",
+											 "#firstGameModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/IeRImI.png",
+											 "Physics Prototype",
+											 "Unity and C#",
+											 "#physicsProtoModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/6kD4ti.png",
+											 "Bossfight Prototype",
+											 "Unity and C#",
+											 "#dynamicsProtoModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/s5rqId.png",
+											 "Playable Advertisements",
+											 "JavaScript and EaselJS",
+											 "#playablesModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/wbkaMN.png",
+											 "Shattered",
+											 "Unity, C#, Blender and Substance Painter",
+											 "#shatteredModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/tfQPRQ.png",
+											 "Snow Shader",
+											 "Unity, C# and High-Level Shading language(HLSL) ",
+											 "#snowShaderModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/eRD1la.png",
+											 "Gold Diggers",
+											 "Unity, C#, PlayCanvas and JavaScript",
+											 "#goldDiggersModal",
+											 "")
+							
+							makeCard("https://i.vgy.me/13GqtH.png",
+											 "Sera And Bushly",
+											 "Unity, C# and Aseprite",
+											 "#seraAndBushlyModal",
+											 "")
+						
+						</script>
+					</div><!-- row End-->
+				</div><!-- container End-->
+			</section>
+			<section>
+				<script>
+					/*(modalID,pageLink,image,video,title,description,buttonText)*/
+					makeModal("firstGameModal",
+							"firstgame.html",
+							["https://i.vgy.me/B58KJi.png","https://i.vgy.me/VjxgEf.png"],
+							["https://www.youtube.com/embed/ryjCo3fWqk0"],
+							"first Game",
+							"This is the very first game i've ever created</p><br><p>you can press the button below to play!",
+							"Play"
+						 );
+					makeModal("physicsProtoModal",
+							"physics-prototype.html",
+							["https://i.vgy.me/1IFrbf.png"],
+							["https://www.youtube.com/embed/iSyYIBOeWho", "https://www.youtube.com/embed/4zas-7xhbFM","https://www.youtube.com/embed/LCF8mQPMEjE" ],
+							"Physics Prototype",
+							"This is a prototype with the focus on multiple physics mechanics</p><br><p>you can press the button below to play!",
+							"Play"
+						 );
+					makeModal("dynamicsProtoModal",
+							"bossfight.html",
+							["https://i.vgy.me/CsMjiq.png","https://i.vgy.me/1l1kSA.png", "https://i.vgy.me/fKtuee.png"],
+							["https://www.youtube.com/embed/cGgWRmrYi_A"],
+							"Bossfight Prototype",
+							"This is a prototype of a simple bossfight</p><br><p>you can press the button below to play!",
+							"Play"
+						 );
+					makeModal("playablesModal",
+							"playables.html",
+							["https://i.vgy.me/LaPppn.png", "https://i.vgy.me/TyLfc5.png", "https://i.vgy.me/cyul9s.png"],
+							["https://www.youtube.com/embed/JAi-wRih1q0"],
+							"Playable Advertisements",
+							"This was an internship project where I programmed 3 playable advertisements that had to have a build size of less than 1MB</p><br><p>you can press the button below for more information!",
+							"More Info"
+						 );
+					makeModal("shatteredModal",
+							"shattered.html",
+							["https://i.vgy.me/KkDN2y.jpg","https://i.vgy.me/3xuGyC.jpg","https://i.vgy.me/e8olRn.jpg"],
+							["https://www.youtube-nocookie.com/embed/9wxxLdMPcj0"],
+							"Shattered",
+							"This was a team project where I focussed on VFX in unity and hardsurface 3D modelling in blender</p><br><p>you can press the button below for more information!",
+							"More Info"
+						 );
+					makeModal("snowShaderModal",
+							"snowshader.html",
+							["https://i.vgy.me/kHKhdK.png"],
+							["https://www.youtube-nocookie.com/embed/xGlZeOOIDRc"],
+							"Snow Shader",
+							"This is a case study where I scripted a snow shader with HLSL and Unity</p><br><p>you can press the button below for more information!",
+							"More Info"
+						 );
+					makeModal("goldDiggersModal",
+							"golddiggers.html",
+							["https://i.vgy.me/LC7Sx1.png"],
+							["https://www.youtube-nocookie.com/embed/blAupyJGoTI"],
+							"GoldDiggers",
+							"This is a team project where I created a JavaScript script that handles mesh generation during runtime with working colliders using the marching squares algorithm</p><br><p>you can press the button below for more information!",
+							"More Info"
+						 );
+					makeModal("seraAndBushlyModal",
+							"seraandbushly.html",
+							["https://i.vgy.me/HfmZSx.png","https://i.vgy.me/fYkZEL.png","https://i.vgy.me/U15zlM.png","https://i.vgy.me/OfmYTz.png"],
+							["https://www.youtube-nocookie.com/embed/KH6uN0D0v-Q"],
+							"Sera And Bushly",
+							"This is a solo project where I did all the programming</p><br><p>you can press the button below to play!",
+							"Play"
+						 );
+				</script>
+			</section> <!--			modal Section End -->
+		</div><!-- projects Content End -->
+		
+		<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+<!-- ART CONTENT -->
+			Art
+		</div>
+	</div>
+	
 
+<div style='display:none'>{title}</div>
+<div style='display:none'>{menu}</div>
+<div style='display:none'>{content}</div>
+<div style='padding: 20px; width:100%; text-align:center;'>{footer}</div>
+</body></html>
